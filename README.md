@@ -21,7 +21,7 @@ Salah satu program dari [**Eudeka!**](https://www.eudeka.id) untuk belajar secar
 ## OSG05 - Flutter Basic
 Dengan jangka waktu lebih kurang 2 bulan, peserta diharapkan dapat mengenal dan membuat aplikasi simple Flutter dengan menggunakan data dari internet (API).
 
-## Cara Mendaftar {{jenis_kelas}}
+## Cara Mendaftar Online Study Group
 Untuk pendaftaran kelas selanjutnya, silahkan kunjungi atau hubungi kami di dawah ini.
 
 ## Info Lebih Lengkap
