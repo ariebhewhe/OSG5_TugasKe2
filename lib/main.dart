@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import './contentPage.dart';
 
-void main() => runApp( new HelloApp());
+void main() => runApp( HelloApp() );
 
 
 class HelloApp extends StatelessWidget{
@@ -12,7 +12,7 @@ class HelloApp extends StatelessWidget{
      theme: ThemeData(
        primarySwatch: Colors.red,
      ),
-      home: contentPage(),
+      home: ContentPage(),
    );
  }
 }
