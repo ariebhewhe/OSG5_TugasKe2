@@ -2,7 +2,7 @@
 Project ini bertema kan tentang 17 Agustus yang ditugaskan oleh Eudeka pada program training OSG5.
 
 ## Screenshot
-![Flutter Apps] (https://drive.google.com/file/d/10raCsdx1Ih-qFsDGeo0pDjxJp75CoAXA/preview )
+![Flutter Apps] (https://ibb.co/gP1Q4h8][img]https://i.ibb.co/gP1Q4h8/tgs-2.jpg)
 
 ## Built With
 - [Flutter](https://flutter.dev)
