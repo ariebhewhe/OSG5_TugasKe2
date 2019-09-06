@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class contentPage extends StatelessWidget{
-  final String titile = 'Sejarah Proklamasi';
+class ContentPage extends StatelessWidget{
+ final String titile = 'Sejarah Proklamasi';
   final String location = 'Tangerang, Banten';
   final String description = '''Sebelum pembacaan teks proklamasi pada tanggal 17 agustus 1945, terdapat peristiwa penting yang tidak boleh dilupakan. Peristiwa penting tersebut merupakan perjuangan para tokoh atau pejuang kemerdekaan untuk dapat segera memerdekakan Indonesia.
 Dimulai Pada tanggal 12 Agustus 1945, melalui Marsekal Terauchi di Dalat, Vietnam, mengatakan kepada Soekarno, Hatta dan Radjiman bahwa pemerintah Jepang akan segera memberikan kemerdekaan kepada Indonesia. Meskipun demikian Jepang menginginkan kemerdekaan Indonesia pada tanggal 24 Agustus. Dua hari kemudian, saat Soekarno, Hatta dan Radjiman kembali ke tanah air dari Dalat, Syahrir mendesak agar Soekarno segera memproklamasikan kemerdekaan karena menganggap hasil pertemuan di Dalat sebagai tipu muslihat Jepang.
@@ -15,6 +15,7 @@ Kemerdekaan Indonesia yang dibaca oleh Soekarno-Hatta yang kemudian menjadi Pres
   @override 
   Widget build(BuildContext context){
     return Scaffold(
+      
       appBar: AppBar(
         title: Text('Eudeka! FLutter Basic'),
         actions: <Widget>[
@@ -29,25 +30,27 @@ Kemerdekaan Indonesia yang dibaca oleh Soekarno-Hatta yang kemudian menjadi Pres
         ],
       ),
 
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children : <Widget>[
-          Image.asset(
+      body: SingleChildScrollView(
+        child: Column(
+           mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Image.asset(
             'images/17_2.jpg',
             height: 250.0,
             width : 412.0,
             fit: BoxFit.fill,
           ),
+
           Container(
             height: 15.0,
           ),
-          Row(
-            children: <Widget>[
-              Container(
+         Row(
+        children: <Widget>[
+            Container(
                 width: 15.0,
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+               Column(
+               crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
                     this.titile,
@@ -56,20 +59,21 @@ Kemerdekaan Indonesia yang dibaca oleh Soekarno-Hatta yang kemudian menjadi Pres
                       fontWeight: FontWeight.bold
                     )
                   ),
-                  Text(
+                   Text(
                     this.location,
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 18.0,
                     ),
                   ),
-                ],
+                ]
 
-              ),
-              Container(
+               ),
+               Container(
                 width: 30.0,
               ),
-              Icon(
+
+               Icon(
                 Icons.star,
                 size: 16.0,
                 color: Colors.red,
@@ -90,9 +94,9 @@ Kemerdekaan Indonesia yang dibaca oleh Soekarno-Hatta yang kemudian menjadi Pres
                   fontSize:16.0,
                 )
               ),
-            ],
-          ),
-          Container(
+        ],
+    ),
+       Container(
             
             padding: const EdgeInsets.all(16.0),
             child: Text(
@@ -106,9 +110,15 @@ Kemerdekaan Indonesia yang dibaca oleh Soekarno-Hatta yang kemudian menjadi Pres
             ),
            
           ),
-        ],
+
+
+        
+          ],
+        ),
       ),
 
     );
   }
 }
+
+
